@@ -13,8 +13,6 @@ export function AddToCartButton({ setCount }) {
   );
 }
 
-//  sure i get...
-
 
 export function CounterButton({ count, setCount }) {
   return (

@@ -1,6 +1,7 @@
 import { OrderTotal } from "./CartItems";
 
 export default function ConfirmOrder({ cartItems, handleClearOrder }) {
+  return (
     <div className="overflow-hidden z-[9999] fixed inset-0 flex flex-col items-center justify-center  bg-black/50">
       <div className="bg-[#fff] h-fit w-[90%] max-w-[500px] p-6 rounded-lg">
         <div className="flex flex-col space-y-2">
@@ -56,5 +57,6 @@ export default function ConfirmOrder({ cartItems, handleClearOrder }) {
           Start New Order
         </button>
       </div>
-    </div>;
+    </div>
+  );
 }
