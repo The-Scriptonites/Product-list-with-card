@@ -29,12 +29,12 @@ export default function MenuBar({ menu, cartItems, setCartItems }) {
 
   return (
     <div className="pb-24 flex-[0.7]">
-      <h1 className="text-3xl mb-6 font-bold text-[#1a0b0a]">Desserts</h1>
+      <h1 className="text-3xl mb-6 font-bold text-[#1a0b0a]">Dessert</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {menu.map((item) => {
           const count = getItemCount(item.name);
           return (
-            <div key={item.name} className={`mb-6 w-[250px] rounded-lg`}>
+            <div key={item.name} className={`mb-6 w-full md:w-[250px] rounded-lg`}>
               <div
                 className={`relative ${
                   count ? "border-2 border-[#9e2b13] rounded-lg" : ""
