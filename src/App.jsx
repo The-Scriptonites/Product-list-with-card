@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="bg-[#fdf6f4] w-full h-fit">
-      <div className="flex h-full pt-10 w-[90%] mx-auto max-w-[1200px]">
+      <div className="flex flex-col md:flex-row h-full pt-10 w-[90%] mx-auto max-w-[1200px]">
         <MenuBar
           menu={menuItems}
           cartItems={cartItems}
