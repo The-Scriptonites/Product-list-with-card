@@ -24,7 +24,7 @@ function App() {
         const data = await response.json();
         setMenuItems(data);
       } catch (error) {
-        console.error("Error fetching menu items:", error);
+        console.error("Yo! What do you know???:", error);
       }
     };
 
