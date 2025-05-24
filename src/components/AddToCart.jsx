@@ -18,7 +18,9 @@ export function CounterButton({ count, setCount }) {
   return (
     <div className="z-[9999] flex items-center justify-between absolute bottom-[-20px] left-[15%] w-[70%] py-2 rounded-full border border-[#de4527] bg-[#de4527] ">
       <button
-        onClick={() => setCount(count - 1)}
+        onClick={() => {
+          setCount(count - 1)
+        }}
         disabled={count === 0}
         className={` text-white rounded-full w-4 h-4 border cursor-pointer flex items-center justify-center ml-2`}
       >

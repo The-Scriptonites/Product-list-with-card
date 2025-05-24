@@ -1,7 +1,6 @@
 import { AddToCartButton, CounterButton } from "./AddToCart";
 
 export default function MenuBar({ menu, cartItems, setCartItems }) {
-
   const handleSetCount = (itemName, newCount, price, image) => {
     setCartItems((prevCounts) => {
       if (newCount === 0) {
@@ -31,7 +30,7 @@ export default function MenuBar({ menu, cartItems, setCartItems }) {
   return (
     <div className="pb-24 flex-[0.7]">
       <h1 className="text-3xl mb-6 font-bold text-[#1a0b0a]">Desserts</h1>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {menu.map((item) => {
           const count = getItemCount(item.name);
           return (
