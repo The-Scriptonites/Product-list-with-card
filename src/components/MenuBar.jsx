@@ -34,7 +34,7 @@ export default function MenuBar({ menu, cartItems, setCartItems }) {
         {menu.map((item) => {
           const count = getItemCount(item.name);
           return (
-            <div key={item.name} className={`mb-6 w-[250px] rounded-lg`}>
+            <div key={item.name} className={`mb-6 w-full md:w-[250px] rounded-lg`}>
               <div
                 className={`relative ${
                   count ? "border-2 border-[#9e2b13] rounded-lg" : ""
